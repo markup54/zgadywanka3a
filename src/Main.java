@@ -3,7 +3,7 @@ public class Main {
         System.out.println("Witaj świecie");
         System.out.println("na lekcji programowania");
 
-        int wylosowana = (int)(Math.random()*10+1);
+        int wylosowana = (int)(Math.random()*10+1);//rzutowanie
         System.out.println(wylosowana);
     }
 }
