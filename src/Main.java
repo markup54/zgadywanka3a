@@ -21,13 +21,15 @@ public class Main {
         Scanner klawiatura = new Scanner(System.in);
         int wpisanaLiczba = klawiatura.nextInt();//wczytywanie z kawiatury liczby całkowitej
         System.out.println("Wpisano z klawiatury "+wpisanaLiczba);
-
+        //instrukcja warunkowa
         if(wpisanaLiczba == wylosowana){
             System.out.println("Trfiona liczba");
         }
         else{
             System.out.println("Nie trafiono spróbuj ponownie");
         }
-
+        //wyrażenie warunkowe
+        String komunikat = wylosowana == wpisanaLiczba ? "Poprawnie":"Niepoprawnie";
+        System.out.println(komunikat);
     }
 }
