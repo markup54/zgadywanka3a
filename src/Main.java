@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Witaj świecie");
         System.out.println("na lekcji programowania");
 
-        int wylosowana = (int)(Math.random()*10+1);//rzutowanie
+        int wylosowana = (int)(Math.random()*100+1);//rzutowanie
         System.out.println(wylosowana);
         /*
         typy proste zawsze z małej litery, mają tylko wartość
@@ -31,5 +31,23 @@ public class Main {
         //wyrażenie warunkowe
         String komunikat = wylosowana == wpisanaLiczba ? "Poprawnie":"Niepoprawnie";
         System.out.println(komunikat);
+
+        int roznica = wylosowana>wpisanaLiczba? wylosowana - wpisanaLiczba:wpisanaLiczba-wylosowana;
+        roznica = roznica/10;//dzielenie całkowite bo wynik typu int
+        //instrukcja switch
+        switch (roznica){
+            case 0:
+                System.out.println("Brawo");
+                break;
+            case 1:
+                System.out.println("Bardzo blisko");
+                break;
+            case 2:
+                System.out.println("Dość blisko");
+                break;
+            default:
+                System.out.println("Spróbuj szczęścia innym razem");
+
+        }
     }
 }
