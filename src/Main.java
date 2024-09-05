@@ -76,6 +76,20 @@ public class Main {
                 }
             }
         }
+        //zgadywanie do skutku
+        System.out.println("Zgadnij liczbę");
+        wpisanaLiczba = klawiatura.nextInt();
+        while (wpisanaLiczba != wylosowana){
+            if(wpisanaLiczba>wylosowana){
+                System.out.println("Wpisano za dużo");
+            }
+            else {
+                System.out.println("Wpisano za mało");
+            }
+            System.out.println("Zgadnij liczbę");
+            wpisanaLiczba = klawiatura.nextInt();
+        }
+        System.out.println("Gratulacje wygrana");
 
     }
 }
